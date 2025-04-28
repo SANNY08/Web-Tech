@@ -1,0 +1,27 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: olivedrab;
+    text-align: center;
+    /* border: 2px solid black; */
+    margin: 10px auto;
+
+}
+
+#one{
+    box-shadow: 2px 2px 8px red;
+    background-image: url("goutham-krishna-h5wvMCdOV3w-unsplash.jpg");
+    background-size:contain;
+}
+
+#two{
+    box-shadow: 2px 2px 8px red;
+    background-image: url("goutham-krishna-h5wvMCdOV3w-unsplash.jpg");
+    background-size:cover;
+}
+
+#three{
+    box-shadow: 2px 2px 8px red;
+    background-image: url("goutham-krishna-h5wvMCdOV3w-unsplash.jpg");
+    background-size:auto;
+}

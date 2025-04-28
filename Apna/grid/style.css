@@ -1,0 +1,25 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: black;
+    display: grid;
+    grid-template-rows:auto;
+    row-gap: 10px;
+}
+/* grid-column */
+.item{
+    /* width: 100px;
+    height: 50px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    
+}
+
+.one{
+    grid-column: 1/4;
+}
+
+/* grid-rows */
+.two{  
+    grid-row: 1/span 4;
+}

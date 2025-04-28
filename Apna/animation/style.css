@@ -1,0 +1,42 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    
+    /* animation-name: fontAnimation; */
+    animation-name:widdth ;
+    /* animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal ; */
+    animation:widdth 1s ease-in 0s infinite normal;
+
+}
+@keyframes widdth{
+    from{
+        width: 40px;
+    }
+    to{
+        width: 500px;
+    }
+}
+
+@keyframes fontAnimation{
+    from{
+        font-size:20px;
+    }
+    to{
+        font-size:40px;
+    }
+}
+
+@keyframes coloranimation{
+    form{
+        background-color: green;
+    }
+    to{
+        background-color: blue;
+    }
+    
+}

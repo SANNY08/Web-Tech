@@ -1,0 +1,25 @@
+/* div{
+    height: 300px;
+    width:auto;
+    background-color: aqua;
+    border-style: solid;
+    border-color:rebeccapurple;
+    border-width:5px;
+} */
+ div{
+    border: 2px solid blue;
+    border-left-color: #62ed18;
+    border-right-color: rgb(92, 31, 244);
+    border-top-color: red;
+    border-radius: 8px;
+margin-bottom: 10px;
+ }  
+
+h1{
+    border-width: 3px;
+    border-style: dashed;
+    border-color: green;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+
+}
