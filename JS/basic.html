@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chake even or odd</title>
+    <script>
+        function getnum(){
+            let n=document.getElementById("num").value;
+            if(n%2==0){
+                document.getElementById("val").innerHTML="Even Number = "+n;
+                document.getElementById("val").style.backgroundColor="#008000"
+            }else{
+                document.getElementById("val").innerHTML="Odd Number = "+n;
+                document.getElementById("val").style.backgroundColor="#cc8000"
+            }
+        }
+    </script>
+</head>
+<body id="color">
+    <center>
+        Number<input type="number" id="num" ><br>
+        <input type="button" value="Even/Odd" onclick="getnum()">
+        <p id="val"> Output Here</p>
+    </center>
+   
+</body>
+</html>
