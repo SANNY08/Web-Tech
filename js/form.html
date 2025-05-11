@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName">
+
+        <label for="postAddress">Postal Address:</label>
+        <input type="text" id="postAddress" name="postAddress">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="" disabled selected>Select State</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="Other">Other</option>
+            </select>
+
+        <label for="pinCode">Pin Code:</label>
+        <input type="text" id="pinCode" name="pinCode">
+
+        <label for="emailId">Email ID:</label>
+        <input type="email" id="emailId" name="emailId">
+
+        <label for="contactNo">Contact No.:</label>
+        <input type="tel" id="contactNo" name="contactNo">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = {
+                name: document.getElementById('name').value,
+                fatherName: document.getElementById('fatherName').value,
+                postAddress: document.getElementById('postAddress').value,
+                city: document.getElementById('city').value,
+                state: document.getElementById('state').value,
+                pinCode: document.getElementById('pinCode').value,
+                emailId: document.getElementById('emailId').value,
+                contactNo: document.getElementById('contactNo').value
+            };
+
+
+            console.log("Form Data:", formData);
+            alert("Form submitted! Check the console for the data."); 
+        });
+    </script>
+
+</body>
+</html>

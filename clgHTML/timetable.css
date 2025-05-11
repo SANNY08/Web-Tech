@@ -1,0 +1,35 @@
+#center{
+    text-align: center;
+}
+table{
+   border: 2px solid black;
+   height: 100%;
+   width: 100%;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: lightblue;
+}
+.purple{
+    background-color: rgb(213, 104, 213);
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.orange{
+    background-color: ye;
+}
+
+.brown{
+    background-color: rgb(230, 85, 85);
+}
+
+.red{
+    color: red;
+}
+
+
